@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'ls'
-                sh 'cp @ /usr/share/nginx/html'
+                sh 'cp * /usr/share/nginx/html'
                 echo 'Deploying....'
             }
         }
